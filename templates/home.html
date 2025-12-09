@@ -1,73 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <title>AferVar</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='stile.css') }}">
     
 </head>
+
 <body>
-    <header>
-    <div id = "back_header" class = "header">
-        
-        <div id="menu_3_linee"  onclick="toggleMenu()">
-            <div class="linea"></div>
-            <div class="linea"></div>
-            <div class="linea"></div>
-        </div>
+    
+    {% include 'header.html' %}
 
+    <main>
+        <h1>Ciao!</h1>
+        <p>ok</p>
+    </main>
 
-        <div id="logo_container">
+    {% include 'footer.html' %}
 
-            <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="logo_img" id="logo_img">
-            
-            <div class="scritta_container">
-                <img src="{{ url_for('static', filename='images/Scritta_Logo.png') }}" alt="scritta_logo" id="scritta_logo">
-            </div>
-            
-        </div>
-
-        <div id="profile">
-            <img src="{{ url_for('static', filename='images/immagine_profilo.jpg') }}" alt="logo_img" id="logo_img">
-        </div>
-        
-    </div>
-    </header>
-   <footer id="footer">
-        <div id = "back_footer" class = "footer">
-            
-            <div id="logo_footer">
-                <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="logo_image" id="logo_image_footer">
-            </div>
-
-            <div class="footer-section">
-            <h3>Esplora: </h3>
-            <ul>
-                <li><a href="{{ url_for('view_regolamento') }}">Regolamento</a></li>
-                <li><a href="{{ url_for('view_info_arbitri') }}">InfoArbitri</a></li>
-                <li><a href="{{ url_for('view_news_calcio') }}">NewsCalcio</a></li>
-            </ul>
-            </div>
-
-        <div class="footer-section">
-            <h3>Note Legali:</h3>
-          <ul>
-             <li><a href="#">Privacy Policy</a></li>
-             <li><a href="#">Cookie Policy</a></li>
-             <li><a href="#">Termini e Condizioni</a></li>
-         </ul>
-        </div>
-
-            <div id="about_us">
-              <h3>Contatti: </h3>
-             <ul>
-                <li><p>assistenza@aftervar.it</p></li>
-                <li><p>0815471367</p></li>
-                <li><p>Napoli, Italia</p></li>
-             </ul>
-            </div>
-        
-        </div>
-    </footer>
 </body>
+
 </html>

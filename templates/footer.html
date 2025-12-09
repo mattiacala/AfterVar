@@ -1,32 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='stile.css') }}">
-</head>
-<body>
-    <footer id="footer">
+   <footer id="footer">
         <div id = "back_footer" class = "footer">
             
             <div id="logo_footer">
                 <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="logo_image" id="logo_image_footer">
             </div>
 
-            <div>
-
+            <div class="footer-section">
+            <h3>Esplora: </h3>
+            <ul>
+                <li><a href="{{ url_for('view_regolamento') }}">Regolamento</a></li>
+                <li><a href="{{ url_for('view_info_arbitri') }}">InfoArbitri</a></li>
+                <li><a href="{{ url_for('view_news_calcio') }}">NewsCalcio</a></li>
+            </ul>
             </div>
 
-            <div>
-
-            </div>
+        <div class="footer-section">
+            <h3>Note Legali:</h3>
+          <ul>
+             <li><a href="#">Privacy Policy</a></li>
+             <li><a href="#">Cookie Policy</a></li>
+             <li><a href="#">Termini e Condizioni</a></li>
+         </ul>
+        </div>
 
             <div id="about_us">
-
+              <h3>Contatti: </h3>
+             <ul>
+                <li><p>assistenza@aftervar.it</p></li>
+                <li><p>0815471367</p></li>
+                <li><p>Napoli, Italia</p></li>
+             </ul>
             </div>
         
         </div>
     </footer>
-</body>
-</html>
