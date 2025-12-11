@@ -27,3 +27,4 @@ def view_news_calcio():
 def Chi_Siamo():
     return render_template('Chi_Siamo.html')
 
+
