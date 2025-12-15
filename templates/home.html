@@ -34,7 +34,7 @@
 
     </div>
 
-    <!--first section-->
+    <!--1 section-->
     <div class="first_section">
 
         <div id="first_s_left">
@@ -58,6 +58,9 @@
             </div>
         </div>
     </div>
+
+    <!--2 section-->
+
     <!-- 3 section -->
 <section class="class_container">
      <div class="titoli_section">
@@ -104,35 +107,57 @@
  </section>
 
   <!-- 4 section -->
-   <div id = "4_sec_left">
-    <h1> Il mondo del VAR </h1>
-    <h3> Le terminologie più usate </h3>
-    <div id="s4.1"> <h3> DOGSO </h3> </div>
-            
-    <div> <p> Acronimo della frase "Deny an Obvious Goal Scoring Opportunity", è un fallo fatto da un calciatore
-        per negare una chiara ed evidente occasione da rete.E' sempre sanzionato con un espulsione. </p></div>
-
-    <div id="s4.2"> <h3> SPA </h3></div>
-    <div><p> Acronimo della frase "Stopping a Promising Attack", si verifica quando un difensore interrompe in 
-        maniera fallosa un'azione offensiva degli avversari. E' sanzionato con l'ammonizione e calcio di
-        punizione diretto.
-    </p></div>
-
-    <div id="s4.3"> <h3> STEP ON FOOT </h3></div>
-    <div><p> E' una situazione in cui un giocatore calpesta, in maniera accidentale o intenzionale, il 
-        piede di un avversario arrecondagli un danno. A seconda dell'intensità puo' essere sanzionato con
-        ammonizione o espulsione.
-    </p></div>
+<div id="s_4_class_container">
+    <div id = "sec_4_left">
     
+        <h1> Il mondo del VAR </h1>
+        <h3> Le terminologie più usate </h3>
 
-   </div>
+        <details> 
+            <summary>DOGSO
+                <span class="arrow"></span> 
+            </summary>
+                <div class="hidden_sec"> 
+                    <p> Acronimo della frase "Deny an Obvious Goal Scoring Opportunity", è un fallo fatto da un calciatore
+                    per negare una chiara ed evidente occasione da rete.E' sempre sanzionato con un espulsione. 
+                    </p>
+                </div>
+        </details>
+        
+        <details> 
+            <summary>SPA
+                <span class="arrow"></span> 
+            </summary>
+                <div class="hidden_sec"> 
+                    <p> Acronimo della frase "Stopping a Promising Attack", si verifica quando un difensore interrompe in 
+                        maniera fallosa un'azione offensiva degli avversari. E' sanzionato con l'ammonizione e calcio di
+                        punizione diretto.
+                    </p>
+                </div>
+        </details>
 
-   <div id = "4_sec_right">
-    <img src = "{{ url_for('static', filename='images/arb_var.jpg') }}" alt = "arb_consulta_var" class="img_4s"> 
-   </div>
+        <details> 
+            <summary>STEP ON FOOT
+                <span class="arrow"></span> 
+            </summary>
+                <div class="hidden_sec"> 
+                        <p> E' una situazione in cui un giocatore calpesta, in maniera accidentale o intenzionale, il 
+                            piede di un avversario arrecondagli un danno. A seconda dell'intensità puo' essere sanzionato con
+                            ammonizione o espulsione.
+                        </p>
+                </div>
+        </details>
+
+    </div>
+
+    <div id = "sec_4_right">
+        <img src = "{{ url_for('static', filename='images/arb_var.jpg') }}" alt = "arb_consulta_var" class="img_4s"> 
+    </div>
     
+</div>
 
 </main>
+    
     {% include 'footer.html' %}
 
 </body>
