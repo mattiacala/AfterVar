@@ -10,9 +10,89 @@
     {% include 'header.html' %}
 
     <main>
-        <h1>Come funziona ?</h1>
-    </main>
+      <section class = "rules_s">
+        <div class = "rules_c">
+            <div class = "rules_title">
+                <h1>IL REGOLAMENTO E SISTEMA DI VALUTAZIONE</h1>
+                <h3>Come funziona AfterVar:</h3>
+            </div>
+            <div class = "rules_content">
+                <div class = "rules_block">
+                    <h4>
+                        1.Il Ruolo del Tifoso e i Token della Reputazione
+                    </h4>
+                    <p>
+                        Su AfterVar, il tifoso non è solo uno spettatore ma analiizando
+                        i principali episodi del VAR tramite video e frame, il tifoso può
+                        esprimere il proprio giudizio.Per garantire affidabilità, utilizziamo
+                        un <strong>Sistema di Reputazione.</strong>
+                    </p>
+                    <p>
+                        Ad ogni utente viene assegnato un <strong>Token</strong> per essere <strong>Identificato</strong>
+                        in base al punteggio accumulato:
+                    </p>
+                    <ul class = "token_list">
+                        <li class ="token_green">
+                            <strong>Token Verde:</strong>
+                            Reputazione > 80 (L'Utente è Affidabile)
+                        </li>
+                        <li class ="token_yellow">
+                            <strong>Token Giallo:</strong>
+                            50 	&#60;= Reputazione 	&#60;= 80 (L'Utente nella Norma)
+                        </li>
+                        </li>
+                        <li class ="token_red">
+                            <strong>Token Rosso:</strong>
+                            Reputazione &#60; 50 (L'Utente non è Affidabile)
+                        </li>
+                    </ul>
+                </div>
+                <hr class = "divider" > 
+                <div class = "rules_block">
+                    <h4>L'Algoritmo del Verdetto Finale</h4>
+                    <p>Per la determinazione della correttezza del giudizio della squadra arbitrale,
+                        AfterVar utilizza un sistema ibrido che bilancia il giudizio degli utenti con quello
+                        della squadra arbitrale.Il <strong>Voto Finale</strong>viene calcolato cosi:
+                    </p>
+                    <div class = "format_box">
+                        <span class="percentage">30%</span>
+                        Voto dei Tifosi(pesato per Reputazione)<br>
+                        <span class = "plus">+</span><br>
+                        <span class ="percentage">70%</span>
+                        Giudizio della Classe Arbitrale
+                    </div>
+                </div>
+                <hr class = "divider" >
+                <div class = "rules_block">
+                    <h4>3.Sistema Disciplinare Virtuale per gli Arbitri</h4>
+                    <p>
+                        In base al Punteggio Finale dell'Algoritmo, l'arbitro dell'incontro riceve
+                        una valutazione che può essere convertita in provvedimenti virtuali o reali: 
+                    </p>
+                    <ul class = "disciplinary_list">
+                        <li>
+                            <span class = "card yellow_card"></span>
+                            <strong>Cartellino Giallo:</strong>26 &#60; Punteggio &#60; 50(Errore lieve)
+                        </li>
+                        <li>
+                            <span class = "card red_card"></span>
+                            <strong>Cartellino Rosso:</strong>Punteggio &#60; 25(Errore grave)
+                        </li>
+                    </ul>
 
+                    <p><strong>LEGENDA SOSPENSIONI:</strong></p>
+                    <ul class = "suspension_table">
+                        <li>2 Gialli accumulati = <strong>1 Rosso(Sospensione per 1 turno di campionato)</strong></li>
+                        <li>1 Rosso Diretto = <strong>Sospensione per 1 turno</strong></li>
+                        <li>2 Rossi Consecutivi = <strong>Sospensione per 3 turni</strong></li>
+                        <li>3 Rossi Consecutivi = <strong>Sospensione per 5 turni</strong></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+      </section>
+    </main>
+    
     {% include 'footer.html' %}
 
 </body>
