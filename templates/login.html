@@ -5,20 +5,33 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
 </head>
 <body>
 
-    <form action="Aftervar.py" method="get">
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username">
+    {% include 'header.html' %}
 
-        <label for="password">Password: </label>
-        <input type="text" id="pwd" name="pwd">
+<main class="login_container">
+    <div class="login">
+        <h1>Bentornato</h1>
+            <p id="p_login">Entra in sala VAR</p>
+            
+        <form action="{{ url_for ('Login') }}" method="post">
+            <div class="login_field">
+                
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" name="username">
+            </div>
 
-        <input type="submit" value="Invia">
-    </form>
+            <div class="login_field">
+                <label for="password">Password: </label>
+                <input type="text" id="pwd" name="pwd">
 
+            </div>
+            <button type="submit">Entriamo in campo!</button>
+        </form>
+
+    </div>
+</main>
 </body>
 </html>
