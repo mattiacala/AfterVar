@@ -152,7 +152,7 @@ p{
 
 }
 
-#btn_sumbit{
+#btn_sumbit_l{
     width: 100%;
     min-width: 200px;
     padding:5%;
@@ -166,7 +166,7 @@ p{
     margin-top:5%;
 }
 
-#btn_sumbit:hover{
+#btn_sumbit_l:hover{
     color: skyblue;
 }
 
@@ -209,8 +209,93 @@ p{
 }
 
 .register{
-    
+    margin-top: 15%;
+    background-color: bisque;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 20%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
+
+.register_left{
+    flex: 1;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#h1_register{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#p_register{
+    text-align: center;
+    font-size: 1rem;;
+    color:#777;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.register_right{
+    flex: 1;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register_field{
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.register_field label{
+    display: block;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color:#000;
+}
+
+.register_field input{
+    width: 100%;
+    padding: 5%;
+    border-radius: 10%;
+    color: black;
+    text-align: left;
+    border: 1px solid black;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#btn_sumbit_r{
+    width: 100%;
+    min-width: 200px;
+    padding:5%;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top:5%;
+}
+
+#btn_sumbit_r:hover{
+    color: skyblue;
+}
+
 
 html, body {
     margin: 0;
