@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <title>Info_Arbitri</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
-
 </head>
 <body>
     {% include 'header.html' %}
 
-    <main>
-        <h1>Chi sono gli arbitri? </h1>
-      
+    <main class="arbitri_container">
+        <h1>Arbitri Serie A:</h1>
+        <p>Elenco ufficiale degli arbitri per la stagione 25/26.</p>
+        
+        {% if arbitri %}
+            <div class="grid_arbitri">
+                {% for arbitro in arbitri %}
+                <div class="card_arbitro">
+                    <div class="card_header">
+                    </div>
+                    <div class="card_body">
+                        <h3 class="arbitro_nome">{{ arbitro.cognome }}</h3>
+                        <p>{{ arbitro.nome }}</p>
+                            <hr class="card_divider">
+                        <p class="arbitro_info">
+                            <span class="badge_sezione">Sez.{{ arbitro.sezione }}</span>
+                        </p>
+                        {% if arbitro.anno_nascita %}
+                        <p class="arbitro_info">Classe:{{ arbitro.anno_nascita }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Nessun arbitro presente nel database.</p>
+        {% endif %}
     </main>
 
     {% include 'footer.html' %}
-
 </body>
 </html>
