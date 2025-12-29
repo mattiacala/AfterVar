@@ -1196,3 +1196,13 @@ transform: translateY(-10px);
     margin: 10px 0; 
     width: 100%;
 }
+
+.videos h1{
+    text-align: center;
+    font-size: 1.5rem;
+} 
+
+.videos p{
+    font-size: 0.9rem;
+    color: #666;
+}
