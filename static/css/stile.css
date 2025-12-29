@@ -1206,3 +1206,34 @@ transform: translateY(-10px);
     font-size: 0.9rem;
     color: #666;
 }
+
+.About_us h1{
+    font-size: 1.5rem;
+    font-weight: 750;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.About_us h2{
+    font-size: 1.3rem;
+    font-weight: 750;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.About_us h3{
+    font-size: 1.1rem;
+    font-weight: 750;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.About_us p{
+    font-size: 1.0rem;
+    color: #555;
+    margin: 0
+}
+
