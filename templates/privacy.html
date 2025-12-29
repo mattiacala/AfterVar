@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
+
+</head>
+<body>
+     {% include 'header.html' %}
+   <main>
+<div class="sicurezza">
+  <h3>Titolare del Trattamento</h3>
+    <p>Il presente sito web è stato realizzato esclusivamente a fini didattici per il corso di TecnologieWeb
+  dell'Università Parthenope di Napoli. Gli amministratori del progetto sono: Calabrese Mattia, Chiariello Emanuele
+  e Lanzuise Alfonso.</p>
+
+<h3>Tipologia di dati raccolti e finalità Questo sito è una demo accademica.</h3>
+    <p>I dati inseriti nei form di contatto o di registrazione non vengono memorizzati 
+in database persistenti a scopo commerciale né ceduti a terzi.
+Qualsiasi dato personale inserito (es. email, nomi) viene utilizzato esclusivamente 
+per la dimostrazione del funzionamento tecnico del sito in sede d'esame.L'elaborazione 
+dei dati avviene esclusivamente sulla base delle finalità didattiche e di ricerca universitaria.</p>
+</div>
+</main>
+    {% include 'footer.html' %}
+</body>
+</html>

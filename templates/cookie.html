@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
+
+</head>
+<body>
+     {% include 'header.html' %}
+   <main>
+<div class="sicurezza">
+  <h3>Cookie Policy</h3>
+    <p>Questa Web_App_Application utilizza esclusivamente cookie tecnici essenziali per il corretto funzionamento 
+    delle sessioni di navigazione.
+Non sono presenti nè cookie di tipo commerciale nè cookie di terze parti volti a tracciare 
+le abitudini di navigazione degli utenti a fini di marketing, in quanto il sito non ha finalità 
+commerciali ma puramente accademiche.</p>
+</div>
+</main>
+    {% include 'footer.html' %}
+</body>
+</html>

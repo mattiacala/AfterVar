@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TerminiCondizioni</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
+
+</head>
+<body>
+     {% include 'header.html' %}
+   <main>
+    <div class="sicurezza">
+  <h3>Termini e Condizioni basate sul nostro Progetto Universitario</h3>
+<ol>
+<li>Questo sito web è un progetto universitario realizzato da studenti.
+ NON è un servizio commerciale reale. Nessun prodotto
+ o servizio mostrato su questo sito è realmente acquistabile.</li>
+
+<li>Tutte le informazioni contenute in questo sito sono basate su fatti reali ma sono
+    utilizzate a scopo riempitivo (lorem ipsum). 
+Gli autori non si assumono alcuna responsabilità per l'utilizzo improprio delle informazioni presenti.</li>
+
+<li>Il codice sorgente e il design sono opera di noi studenti. 
+Eventuali immagini o loghi di terze parti sono utilizzati ai soli fini di esercitazione scolastica.</li>
+</ol>
+</div>
+</main>
+    {% include 'footer.html' %}
+</body>
+</html>

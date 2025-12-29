@@ -9,10 +9,49 @@
 <body>
     {% include 'header.html' %}
 
-    <main>
-        <h1>News_Calcio: </h1>
-      
-    </main>
+   <main>
+        <section class="sec_news">
+            <div class="container_news">
+
+                <div class="title_news">
+                    <h1>Le News sul calcio</h1>
+                    <h4> Tutte le ultime ore sul mondo del calcio</h4>
+                </div>
+
+                <div class="grid_news">
+            <article class="card_news">
+              <div class="img_news">
+              <img src="static/images/polemica_tifoso.jpg" alt="polemica_tifoso">
+             </div>
+             <div class="content_news">
+                <h3>Polemica su quell'episodio dubbio:</h3>
+                    <p> Era Rigore? Era Cartellino Rosso? Era Fuorigioco?</p>
+             </div>
+            </article>
+                 <article class="card_news">
+              <div class="img_news">
+              <img src="static/images/nuove_tecnologie.jpg" alt="nuove_tecnologie_calcio">
+             </div>
+             <div class="content_news">
+                <h3>Le nuove Tecnologie:</h3>
+                    <p> La federazione calcistica sta valutando l'introduzione
+                        del Fuorigioco Semi-Automatico anche nelle serie minori.</p>
+             </div>
+            </article>
+                 <article class="card_news">
+              <div class="img_news">
+              <img src="static/images/squadra_del_cuore.jpg" alt="squadra_del_cuore">
+             </div>
+             <div class="content_news">
+                <h3>Rimani aggiornato sull'ultima giornata di Serie A:</h3>
+                    <p> Scopri il Risultato, la posizione in Classifica, i Marcatori e le Azioni Dubbie
+                         della tua squadra del cuore e non solo</p>
+             </div>
+            </article>
+                </div>
+            </div>
+        </section>
+   </main>
 
     {% include 'footer.html' %}
 

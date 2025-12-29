@@ -209,19 +209,17 @@ p{
     background-color: #ffffff;
 }
 
-.register{
-    margin-top: 15%;
+.register {
+    margin-top: 35px; 
     background-color: bisque;
     width: 90%;
-    height: auto;
-    gap: 40px;
-    max-width: 1400px;
+    gap: 20px; 
+    max-width: 900px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     border: 1px solid black;
-    border-radius: 20%;
-    margin-top: 15px;
+    border-radius: 20px; 
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
@@ -234,18 +232,19 @@ p{
     justify-content: center;
 }
 
-#h1_register{
+#h1_register {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem; 
+    margin-bottom: 5px; 
     text-transform: uppercase;
     color: black;
 }
 
-#p_register{
+#p_register {
     text-align: center;
-    font-size: 1rem;;
-    color:#777;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px; 
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
@@ -263,44 +262,64 @@ p{
     align-items: center;
 }
 
-.register_field{
-    margin-bottom: 15px;
+.register_field {
+    margin-bottom: 8px; 
     text-align: left;
 }
 
-.register_field label{
+.register_field label {
     display: block;
-    margin-bottom: 5%;
+    margin-bottom: 2px; 
     font-weight: bold;
-    font-size: 0.9rem;
-    color:#000;
+    font-size: 0.8rem; 
+    color: #000;
 }
 
-.register_field input{
+.register_field input {
     width: 100%;
-    padding: 10px 15px;
-    border-radius: 8%;
+    padding: 8px 10px; 
+    border-radius: 5px;
     color: black;
     text-align: left;
     border: 1px solid black;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     box-sizing: border-box;
 }
 
-#btn_sumbit_r{
+#sqpref {
+    width: 100%;
+    padding: 8px 10px; 
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    text-align: left;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#sqpref:focus{
+    border-color: blue;
+    outline: none;
+    background-color: aliceblue;
+    color: #000;
+}
+
+#btn_sumbit_r {
     width: 100%;
     min-width: 200px;
-    padding:5%;
-    margin-left: 20px;
+    padding: 10px;      
+    margin-left: 0;     
     background-color: black;
     color: white;
-    border-radius: 50%;
+    border-radius: 50px;
     font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 1rem;
+    margin-bottom: 10px; 
+    font-size: 0.9rem;
     text-transform: uppercase;
     cursor: pointer;
-    margin-top:5%;
+    margin-top: 10px;    
 }
 
 #btn_sumbit_r:hover{
@@ -338,56 +357,76 @@ main {
     width: 100%;
     background-color: black;
     margin-top: auto;
+    border-top: 1px solid #333;
 }
 
 #back_footer {
     width: 100%;
-    height: 150px;
-    padding: 0 20px;
+    padding: 20px 40px; 
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;              
+    flex-direction: row;        
+    justify-content: space-between; 
+    align-items: flex-start;        
+    gap: 40px;                  
     color: white;
+    border-top: 1px solid #333;
 }
 
+
 #logo_image_footer {
-    height: 100px;
+    height: 150px;
     width: auto;
 }
 
-#about_us p {
-    color: white;
-    margin: 0;
-    font-size: 14px;
+#about_us,
+.footer-section {
+    font-size: 0.8rem;
 }
 
+#about_us h3,
 .footer-section h3 {
     color: skyblue;
     margin-bottom: 15px;
-    font-size: 18px;
     margin-top: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
+#about_us p {
+    color:#888; 
+    margin: 0;
+    font-size: 0.8rem;
+    max-width: 300px; 
+    line-height: 1.4;
+}
+
+#about_us ul,
 .footer-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+#about_us ul li,
 .footer-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    display: block;
+    margin-right: 0;
 }
 
-.footer-section ul li a {
-    color: white;
+.footer-section ul li a, 
+#about_us ul li a {
+    color: #ccc;
     text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
+    font-size: 0.8rem;
 }
 
-.footer-section ul li a:hover {
+.footer-section ul li a:hover, 
+#about_us ul li a:hover {
     color: skyblue;
+    text-decoration: underline;
 }
 
 
@@ -982,5 +1021,111 @@ transform: translateY(-10px);
     color: red;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.sec_news{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 80px;
+}
+
+.container_news{
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+}
+
+.title_news {
+    margin-bottom: 40px;
+    text-align: left;
+}
+.title_news{
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.title_news h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.title_news h4{
+    font-size: 1.5rem;
+    color: #777;
+    font-weight: 450;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+}
+
+.grid_news{
+    display: grid;
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-columns: 30% 30% 30%;
+    gap: 35px;
+    width: 100%;
+}
+
+.card_news{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.img_news{
+    width: 100%;
+    height: 220px;
+}
+
+.img_news img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content_news{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_news h3{
+    font-size: 1.3rem;
+    font-weight: 750;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content_news p{
+    font-size: 1.0rem;
+    color: #555;
+    margin: 0
+}
+
+.sicurezza h3{
+    font-size: 1.3rem;
+    font-weight: 750;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sicurezza p{
+    font-size: 1.0rem;
+    color: #555;
+    margin: 0
 }
 
