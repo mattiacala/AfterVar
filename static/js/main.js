@@ -15,3 +15,15 @@ window.onload = () => {
             });
     }
 }
+
+    
+function HideVideo(arrow){
+        const titlecnt = arrow.parentElement;
+        const videocnt = titlecnt.nextElementSibling;
+
+        if(videocnt){
+            videocnt.classList.toggle('hidden');
+        }
+
+        arrow.classList.toggle('slide');
+}
