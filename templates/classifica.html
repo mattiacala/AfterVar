@@ -55,8 +55,51 @@
                 {% endif %}
         </section>
      </div>
+     <div class="classif2_container">
+            <section class="classif_sec">
+                <h2>Regionale:</h2>
+
+                {% if users %}
+                 <div class="classif_table">
+                    <table class="table_cnt">
+                    <thead> 
+                        <tr> 
+                          <th> Posizione  </th>  
+                          <th> Username  </th>  
+                          <th> Punteggio  </th>  
+                          <th> Squadra Preferita  </th>  
+                          <th> Data Iscrizione  </th>  
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <!--Auto increment pos-->
+                            <td class="table_pos"> {{loop.index}} </td>
+                            <td class="table_usn"> {{ user.username}}</td>
+                            <td class="table_punt"> {{user.punteggio}} </td>
+                            <td class="table_sqpre"> {{user.squad_prefer}}</td>
+
+                            <td class="table_di"> 
+                             {% if user.data_iscr %} 
+                                {{user.data_iscr}}
+                             {% else %}
+                                - 
+                             {% endif %}
+                            </td>
+                         </tr>
+                         {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+                {% else %}
+                <p>Nessun utente presente nel database.</p>
+                {% endif %}
+        </section>
+     </div>
     </div>        
  </main>
+
 
     {% include 'footer.html' %}
 
