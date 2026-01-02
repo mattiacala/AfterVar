@@ -27,3 +27,12 @@ function HideVideo(arrow){
 
         arrow.classList.toggle('slide');
 }
+
+//function to open and close the Profile menu
+
+function ProfileMenu(){
+    const dropdown=document.getElementById('profile_dropdown');
+    if(dropdown){
+        dropdown.classList.toggle('active_dropdown');
+    }
+}

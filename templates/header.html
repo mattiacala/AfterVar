@@ -21,7 +21,7 @@
         <div id="profile">
             {% if current_user.is_authenticated %}
                 <div id="logo_profile" onclick="ProfileMenu()">   
-                    <img src="{{ url_for('static', filename='images/immagine_profilo.jpg') }}" alt="logo_img" id="logo_img">
+                    <img src="{{ url_for('static', filename='images/immagine_profilo.jpg') }}" alt="logo_img" id="logo2_img">
                 </div>
 
                 <div id="profile_dropdown">
@@ -31,7 +31,6 @@
                     </div>
                     <ul id="link_dropdown">
                         <li><a href=''></a>Profilo</li>
-                        <li><a href=''></a>Punteggio</li>
                         <li><a href=''></a>Storico</li>
                         <li><a href="{{url_for ('Logout')}}"></a></li>
                     </ul>
